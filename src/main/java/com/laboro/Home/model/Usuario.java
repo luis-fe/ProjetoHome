@@ -2,8 +2,6 @@ package com.laboro.Home.model;
 
 import com.laboro.Home.model.enums.TipoUsuario;
 import com.laboro.Home.model.enums.WorkCategory;
-import com.sun.istack.NotNull;
-import lombok.Data;
 
 import javax.persistence.Entity;
 import java.util.ArrayList;

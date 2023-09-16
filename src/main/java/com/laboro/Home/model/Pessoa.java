@@ -5,8 +5,8 @@ import javax.persistence.Entity;
 @Entity
 public class Pessoa {
     private Long id;
-    private char[] nome = new char[64];
-    private char[] cpf = new char[11];
+    private String nome;
+    private String cpf;
     private char sexo;
     private String email;
     private Address endereco;
