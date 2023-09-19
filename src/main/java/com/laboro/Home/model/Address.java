@@ -1,8 +1,8 @@
 package com.laboro.Home.model;
 
-import javax.persistence.Entity;
+import javax.persistence.Embeddable;
 
-@Entity
+@Embeddable
 public class Address {
     String rua;
     String cidade;
