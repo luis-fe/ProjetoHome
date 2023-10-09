@@ -1,0 +1,54 @@
+<mxfile host="app.diagrams.net" modified="2023-09-02T02:24:00.446Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="nSkDZv9Uvbnal_c-DqIZ" version="21.7.2" type="device">
+  <diagram name="Página-1" id="3IEV-ZT7WQLfCgsOWPMP">
+    <mxGraphModel dx="1088" dy="612" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cVh7EQMni8-Y3-2EHZ_t-3" value="Serviço" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="80" width="290" height="228" as="geometry" />
+        </mxCell>
+        <mxCell id="cVh7EQMni8-Y3-2EHZ_t-4" value="- titulo: Char[50]&lt;br&gt;- descricao: Char[300]&lt;br&gt;- calendario: CalendarioDisponibilidade&lt;br&gt;- tags: List&amp;lt;Tag&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cVh7EQMni8-Y3-2EHZ_t-3">
+          <mxGeometry y="26" width="290" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="cVh7EQMni8-Y3-2EHZ_t-5" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="cVh7EQMni8-Y3-2EHZ_t-3">
+          <mxGeometry y="120" width="290" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="cVh7EQMni8-Y3-2EHZ_t-6" value="+ agendarServico(type): type&lt;br&gt;+verificarDisponibilidade(CalendarioDisponibilidade): CalendarioDisponibilidade&lt;br&gt;+ publicarAvaliacao(Avaliacao): Avaliação&lt;br&gt;+ getters(): void&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;+ setters(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cVh7EQMni8-Y3-2EHZ_t-3">
+          <mxGeometry y="128" width="290" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cVh7EQMni8-Y3-2EHZ_t-9" value="«Annotation»&lt;br&gt;&lt;b&gt;- add setCategoryFalse(Boolean): void ao WorkCategory&lt;br&gt;- add Class CalendarioDisponibilidade para guardar a disponibilidade do prestador de serviços (vai conter uma lista de datas indisponiveis, os dias e horario de funcionamento. O prestador de serviços terá um próprio)&lt;br&gt;&lt;/b&gt;" style="html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="270" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="cVh7EQMni8-Y3-2EHZ_t-10" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" vertex="1" parent="cVh7EQMni8-Y3-2EHZ_t-9">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cVh7EQMni8-Y3-2EHZ_t-11" value="Tag" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="320" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cVh7EQMni8-Y3-2EHZ_t-12" value="- newTag: Char[30]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cVh7EQMni8-Y3-2EHZ_t-11">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="cVh7EQMni8-Y3-2EHZ_t-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="cVh7EQMni8-Y3-2EHZ_t-11">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="cVh7EQMni8-Y3-2EHZ_t-14" value="+ getters(): void&lt;br&gt;+ setters(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cVh7EQMni8-Y3-2EHZ_t-11">
+          <mxGeometry y="60" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cVh7EQMni8-Y3-2EHZ_t-16" value="Avaliacao" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="360" width="190" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="cVh7EQMni8-Y3-2EHZ_t-17" value="- comentario: Char[300]&lt;br&gt;- estrelas: Int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cVh7EQMni8-Y3-2EHZ_t-16">
+          <mxGeometry y="26" width="190" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="cVh7EQMni8-Y3-2EHZ_t-18" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="cVh7EQMni8-Y3-2EHZ_t-16">
+          <mxGeometry y="70" width="190" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="cVh7EQMni8-Y3-2EHZ_t-19" value="+ getters(): void&lt;br&gt;+ setters(): void&lt;br&gt;+ converterEstrelas(int): void&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="cVh7EQMni8-Y3-2EHZ_t-16">
+          <mxGeometry y="78" width="190" height="72" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
